@@ -1,0 +1,207 @@
+.ContactDiv {
+    background-color: #9a795a;
+    margin: -8px;
+    overflow: hidden;
+    margin-top: 18vw;
+}
+
+.ContactDiv > h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.ContactDiv > h1:hover::before {
+  content: "Contact"; 
+  color: white;
+  transition: 0.6s ease;
+  animation: jump-out 0.6s ease forwards;
+  letter-spacing: 0px;
+  position: absolute;
+}
+
+.ContactDiv > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.ContactDiv label {
+  font-family: '__SucroseBold_bfa38c', '__SucroseBold_Fallback_bfa38c';
+  color: white;
+  padding: 12px 12px 12px 0;
+  margin-left: 4rem;
+}
+
+.name {
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-right: 4rem;
+    padding-right: 1rem;
+}
+
+.email {
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-right: 4rem;
+    padding-right: 1rem;
+}
+
+.subject {
+    width: 75%;
+    padding-bottom: 4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-right: 4rem;
+    padding-right: 1rem;
+}
+
+.submit {
+    font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+    font-weight: bold;
+    border-radius: 15px;
+    width: 180px;
+    padding: 12px;
+    margin: 30px auto;
+    border: 5px solid; 
+    background-color: #9a795a;
+    color: white;
+}
+
+ .nameLabel {
+  position: relative;
+  left: -26rem;
+  overflow: hidden;
+}
+
+
+.emailLabel {
+  position: relative;
+  left: 26rem;
+  overflow: hidden;
+}
+
+.slide2 {
+  animation: slide2 0.5s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slide2 {
+  100% {
+    left: 0;
+  }
+}
+
+
+.subjectLabel {
+  position: relative;
+  left: -26rem;
+  overflow: hidden;
+}
+
+.submit:hover {
+    animation: breathing 5s ease-out infinite normal;
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+  @keyframes breathing {
+    0% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    25% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @media (min-width: 561px) {
+    
+    .ContactDiv {
+      margin-top: 0vw;
+    }
+
+
+    .nameLabel {
+      left: -100vw;
+    }
+    
+    
+    .emailLabel {
+      
+      left: 100vw
+    }
+
+    .subjectLabel {
+      left: -100vw;
+    }
+}
+
+
+@media (min-width: 702px) {
+  .ContactDiv {
+    margin-top: 10vw;
+  }
+
+  .ContactDiv > h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+}
+
+@media (min-width: 1200px) {
+  .ContactDiv {
+    margin-top: 0vw;
+  }
+    .ContactDiv label {
+        margin-left: 8rem;
+        width: 35vw;
+        font-size: 3vw;
+      }
+    
+      .name {
+        height: 2vw;
+        font-size: 1.8vw;
+      }
+    
+      .email {
+        height: 2vw;
+        font-size: 1.8vw;
+      }
+    
+      .subject {
+        height: 4vw;
+        font-size: 1.8vw;
+      }
+
+      .submit {
+        border-radius: 3vw;
+        width: 15vw;
+        padding: 12px;
+        font-size: 1.7vw;
+    }
+}

@@ -1,0 +1,62 @@
+.deskNav {
+    background-color: #9A795A;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 101vw;
+    height: 17vh;
+    box-shadow: 2px 1px 2px rgba(0,0,0,0.4), 4px 4px 4px rgba(0,0,0,0.2), 6px 6px 6px rgba(0,0,0,0.1);
+    margin: -10px;
+    height: 13vh;
+    overflow: hidden;
+  }
+
+.navName {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    color: white;
+    cursor:pointer;
+    font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+    font-weight: bold;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 11.6vh;
+}
+
+.navLinks {
+    display: flex;
+    position: relative;
+    left: 21.4vw;
+}
+
+.navLinks > button {
+    color: white;
+    cursor:pointer;
+    margin: 8px auto;
+    font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+    font-weight: bold;
+    text-shadow: 4px 3px 8px #000000;
+    float:right;
+    font-size: 2vw;
+    position: relative;
+    height: 11.6vh;
+}
+
+.navLinks > button:hover {
+    background-color: #785a3e;
+    border-radius: 4px 4px 0 0;
+    text-shadow: none;
+}
+
+@media (min-width: 702px) {
+    .navLinks {
+        display: flex;
+        position: relative;
+        left: 20.5vw;
+    }
+  }

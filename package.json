@@ -1,0 +1,39 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start -p 8000",
+    "docker-build": "docker build . -t devo97/portfolio:$npm_package_version -t devo97/portfolio:latest",
+    "predeploy": "next build && npm run docker-build",
+    "deploy": "docker push devo97/portfolio:$npm_package_version && docker push devo97/portfolio:latest",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/lab": "^5.0.0-alpha.140",
+    "@mui/material": "^5.14.5",
+    "@next/font": "13.4.7",
+    "@react-icons/all-files": "^4.1.0",
+    "@types/node": "20.3.2",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "framer-motion": "^10.16.1",
+    "hamburger-react": "^2.5.0",
+    "next": "13.4.7",
+    "nodemailer": "^6.9.4",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.6"
+  }
+}

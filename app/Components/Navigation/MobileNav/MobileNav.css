@@ -1,0 +1,139 @@
+/*==========================
+Sidebar navigation
+========================*/
+.navbar {
+    position: relative;
+  }
+  button {
+    background: transparent;;
+    border: none;
+  }
+  .navbar .toggle {
+    position: fixed;
+    left: 30px;
+    top: 40px;
+    cursor: pointer;
+    background: transparent;;
+    border: none;
+  }
+  .menu-nav {
+    list-style: none;
+    position: absolute;
+    background: #9A795A;
+    top: 4.1rem;
+    left: -0.5rem;
+    width: 0;
+    overflow: hidden;
+    max-width: 7rem;
+    z-index: 9;
+    font-size: 18px;
+    transform: translateX(-100px);
+    transition: transform ease-in-out 0.3s;
+    /* transition: width ease 0.2s; */
+    box-shadow: 2px 1px 3px rgba(0,0,0,0.4), 4px 4px 4px rgba(0,0,0,0.2), 6px 6px 6px rgba(0,0,0,0.1);
+  }
+  .menu-nav.show-menu {
+    width: 24vw;
+    height: 31vh;
+    transform: translateX(0px);
+  }
+  .menu-nav li {
+    display: block;
+    left: -1rem;
+    position: relative;
+  }
+  .log-in {
+    color: #777;
+    border-top: 1px solid #efecec;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  /* logout */
+  .logout {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+    color: #005bb3;
+  }
+  
+  .emoji > img {
+    height: 4.5rem;
+    width: 4.5rem;
+    right: 1.9rem;
+    bottom: .9rem;
+    position: relative;
+}
+
+  .nav {
+    background-color: #9A795A;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 101vw;
+    height: 17vh;
+    box-shadow: 2px 1px 2px rgba(0,0,0,0.4), 4px 4px 4px rgba(0,0,0,0.2), 6px 6px 6px rgba(0,0,0,0.1);
+    margin: -10px;
+  }
+
+  .hamburger-react {
+    position: fixed;
+    top: 1.5rem;
+    right: 5rem;
+    color: white;
+    cursor: pointer;
+    margin-right: 7rem;
+    min-width: 10vw;
+  }
+
+  a {
+    color: white;
+    cursor:pointer; 
+    font-size: 1.5rem;
+    text-decoration: none; 
+    text-align: left;
+    left: 1rem;
+}
+
+.menu-nav > li {
+    color: white;
+    cursor:pointer;
+    margin: 8px auto;
+    font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+    font-weight: bold;
+    text-shadow: 4px 3px 8px #000000;
+}
+
+.menu-nav > li:hover {
+  color: black;
+  cursor:pointer;
+  margin: 8px auto;
+  font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.mobName {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: white;
+  cursor:pointer;
+  font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+  font-weight: bold;
+  font-size: 8.5vw;
+  position: absolute;
+  top: 4vh;
+  left: 29vw;
+  width: 52%;
+  height: 11vh;
+}
+
+@media (min-width: 561px) {
+  .hamburger-react {
+    min-width: 40vw;
+  }
+}
