@@ -1,0 +1,189 @@
+
+.div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #9A795A;
+    align-items: center;
+    padding-top: 10rem;
+    height: 100%;
+    width: 100%;
+}
+
+.div > h1 {
+  margin-bottom: -0.2rem;
+  color: white;
+  font-size: 7vw;
+}
+
+.div > h1:hover::before {
+  content: "Front-End React Developer"; 
+  color: white;
+  transition: 0.6s ease;
+  animation: jump-out 0.6s ease forwards;
+  letter-spacing: -3px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.div > p {
+  text-align: center;
+  color: white;
+  font-size: 4vw;
+}
+
+
+.breath1 {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 10px;
+  margin-top: 5px;   
+}
+
+.breath2 {
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 10px;
+  margin-top: 5px;   
+}
+
+.breath3 {
+  animation-name: floating;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 10px;
+  margin-top: 5px;   
+}
+
+.breath4 {
+  animation-name: floating;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 10px;
+  margin-top: 5px;   
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }  
+}
+
+.breath1:hover {
+   animation: breathings ease-out infinite;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+
+.breath2:hover {
+  animation: breathings ease-out infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.breath3:hover {
+  animation: breathings ease-out infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.breath4:hover {
+  animation: breathings ease-out infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes breathings {
+  0% { transform: scale(1); }
+  25% { transform: scale(0.9); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(.9); }
+}
+
+.div > button > svg {
+  height: 14.5vh;
+  width: 8vw;
+  color: white;
+  margin: 1rem;
+}
+
+.div > button > svg:hover {
+  cursor:pointer;
+  color: black;
+  box-shadow: none;
+}
+
+
+
+.hometechStack {
+  padding-top: 1rem;
+  font-size: 1.15rem;
+  color: white;
+  box-shadow: none;
+}
+
+@media (min-width: 561px) {
+  .div > button > svg {
+    height: 15.5vh;
+    width: 6vw;
+  }
+}
+
+@media (min-width: 702px) {
+.div {
+    padding-bottom: 5rem;
+  }
+
+  .breath1 {
+    width: 14vw;
+    height: 37vh;  
+  }
+  
+  .breath2 {
+    width: 14vw;
+    height: 37vh;  
+  }
+  
+  .breath3 {
+    width: 14vw;
+    height: 37vh; 
+  }
+  
+  .breath4 {
+    width: 14vw;
+    height: 37vh;  
+  }
+
+  .div > h1 {
+    font-size: 4.9vw;
+  }
+
+  .div > p {
+    font-size: 3vw;
+}
+}
+
+@media (min-width: 1200px) {
+  .div > h1 {
+      font-size: 4.4vw;
+    }
+  
+    .div > p {
+      font-size: 2.5vw;
+    }
+  
+    .hometechStack {
+      font-size: 5vh;
+    }
+
+    .div > button > svg {
+      height: 3rem;
+      width: 6rem;
+    }
+}

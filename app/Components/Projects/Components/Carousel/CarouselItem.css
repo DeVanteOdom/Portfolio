@@ -1,0 +1,24 @@
+.carouselItem {
+    display: inline-flex;
+    justify-content: center;
+    background-color: #9a795a;
+  }
+
+  .techstackc {
+    font-weight: bold;
+    color: white;
+    font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+    font-size: 1.5vw;
+    padding-top: 3vw;
+  }
+
+
+  @media (min-width: 1200px) {
+    .techstackc {
+      font-weight: bold;
+      color: white;
+      font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+      font-size: 1.2rem;
+      padding-top: 1rem;
+    }
+  }

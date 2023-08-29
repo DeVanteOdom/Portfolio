@@ -1,0 +1,59 @@
+.Projectdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.Projectdiv > h1 {
+    color: white;
+}
+
+.Projectdiv > p {
+    text-align: center;
+    color: white;
+    padding: 0 12px;
+    line-height: 1.6;
+}
+
+.projectButton  > button {
+    cursor: pointer;
+    border-radius: 11px;
+    background-color: #9a795a;
+    color: white;
+    border: 3px solid;
+    margin: 20px;
+}
+
+.projectButton button:hover {
+    animation: breathing 5s ease-out infinite normal;
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.techstack {
+    font-weight: bold;
+    color: white;
+    font-family: '__Raleway_4affbd', '__Raleway_Fallback_4affbd';
+}
+
+.fade-in {
+    animation: fade-in 3s forwards ease;
+}
+
+@keyframes fade-in {
+    100%{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+
+@media (min-width: 561px) {
+    .Projectdiv > p {
+        padding: 0 25px;
+    }
+  }
